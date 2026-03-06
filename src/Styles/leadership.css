@@ -1,0 +1,49 @@
+.leadership {
+  width: 100%;
+  padding: 44px 24px;
+  box-sizing: border-box;
+}
+
+.leadership__container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.leadership__title {
+  margin: 0 0 14px;
+  font-size: 28px;
+}
+
+.leadership__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.leadership__person {
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 16px;
+}
+
+.leadership__name {
+  margin: 10px 0 2px;
+  font-weight: 700;
+}
+
+.leadership__role {
+  margin: 0;
+  opacity: 0.85;
+}
+
+@media (max-width: 1100px) {
+  .leadership__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .leadership__grid {
+    grid-template-columns: 1fr;
+  }
+}

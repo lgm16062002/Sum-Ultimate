@@ -1,0 +1,44 @@
+.whereJourney {
+  width: 100%;
+  padding: 44px 24px;
+  box-sizing: border-box;
+}
+
+.whereJourney__container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.whereJourney__title {
+  margin: 0 0 14px;
+  font-size: 28px;
+}
+
+.whereJourney__steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.whereJourney__step {
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 16px;
+}
+
+.whereJourney__stepTitle {
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+
+.whereJourney__stepBody {
+  margin: 0;
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .whereJourney__steps {
+    grid-template-columns: 1fr;
+  }
+}

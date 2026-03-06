@@ -1,0 +1,36 @@
+.reward {
+  width: 100%;
+  padding: 40px 24px;
+  box-sizing: border-box;
+}
+
+.reward__container {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.reward__card {
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 18px;
+}
+
+.reward__title {
+  margin: 0 0 10px;
+  font-size: 22px;
+}
+
+.reward__text {
+  margin: 0;
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .reward__container {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,52 @@
+.patientService {
+  width: 100%;
+  padding: 40px 24px;
+  box-sizing: border-box;
+}
+
+.patientService__container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.patientService__header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.patientService__title {
+  margin: 0;
+  font-size: 28px;
+}
+
+.patientService__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.patientService__card {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.patientService__cardTitle {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.patientService__cardBody {
+  margin: 0;
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .patientService__grid {
+    grid-template-columns: 1fr;
+  }
+}
