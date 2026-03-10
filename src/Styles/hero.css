@@ -44,11 +44,7 @@
   font-weight: 600;
 }
 
-.hero__media {
-  width: 100%;
-  min-height: 240px;
-  border-radius: 18px;
-}
+
 
 @media (max-width: 900px) {
   .hero__container {

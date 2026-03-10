@@ -12,64 +12,78 @@ import { FiArrowUpRight } from "react-icons/fi";
 const patientService = [
   {
     title: "Online Appointment Booking",
-    img: "https://images.unsplash.com/photo-1581056771107-24ca5f033842?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: "/appointment.png",
   },
   {
     title: "Health Check-up Packages",
-    img: "https://images.unsplash.com/photo-1581056771107-24ca5f033842?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: "/checkup.png",
   },
-
+  {
+    title: "Medical Insurance",
+    img: "/insurance.png",
+  },
+  {
+    title: "Ambulance Services",
+    img: "/ambulance.png",
+  },
   {
     title: "Online Appointment Booking",
-    img: "https://images.unsplash.com/photo-1581056771107-24ca5f033842?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: "/appointment.png",
   },
   {
     title: "Health Check-up Packages",
-    img: "https://images.unsplash.com/photo-1581056771107-24ca5f033842?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: "/checkup.png",
   },
-
+  {
+    title: "Medical Insurance",
+    img: "/insurance.png",
+  },
+  {
+    title: "Ambulance Services",
+    img: "/ambulance.png",
+  },
   {
     title: "Online Appointment Booking",
-    img: "https://images.unsplash.com/photo-1581056771107-24ca5f033842?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: "/appointment.png",
   },
   {
     title: "Health Check-up Packages",
-    img: "https://images.unsplash.com/photo-1581056771107-24ca5f033842?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-
-  {
-    title: "Online Appointment Booking",
-    img: "https://images.unsplash.com/photo-1581056771107-24ca5f033842?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    img: "/checkup.png",
   },
   {
-    title: "Health Check-up Packages",
-    img: "https://images.unsplash.com/photo-1581056771107-24ca5f033842?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-
-  {
-    title: "Online Appointment Booking",
-    img: "https://images.unsplash.com/photo-1581056771107-24ca5f033842?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Medical Insurance",
+    img: "/insurance.png",
   },
   {
-    title: "Health Check-up Packages",
-    img: "https://images.unsplash.com/photo-1581056771107-24ca5f033842?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Ambulance Services",
+    img: "/ambulance.png",
   },
 ];
 
 export default function PatientService() {
   return (
-    <section className="patientService" id="services">
+    <section className="patientService py-14" id="services">
+      <div className="text-center mb-12 flex flex-col gap-3">
+        <h2 className="text-4xl md:text-[2.75rem] text-[#1c6e73] font-normal tracking-wide">
+          Patient Services
+        </h2>
+        <p className="text-lg md:text-[1.35rem] text-[#1c6e73] font-normal tracking-wide">
+          The Ultimate Healthcare Destination For Your Family
+        </p>
+      </div>
+
       <Carousel
         opts={{
           align: "start",
+          loop: true,
         }}
         className="w-[90%] mx-auto relative"
       >
         <CarouselContent className="">
           {patientService?.map((item, idx) => (
-            <CarouselItem key={idx} className="basis-1/2 lg:basis-1/4">
+            <CarouselItem key={idx} className="basis-1/1 md:basis-1/2 lg:basis-1/4">
               <div className="">
-                <Card className="w-[300px] overflow-hidden rounded-3xl shadow-lg p-0">
+                <Card className="w-[290px] overflow-hidden rounded-3xl shadow-lg p-0">
                   <CardContent className="relative aspect-[3/4] p-0">
                     {/* Image */}
                     <img
@@ -96,8 +110,8 @@ export default function PatientService() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="absolute top-[110%] left-[46%] p-5 shadow-xl border-2 active:shadow-none active:transform-[translateY(5px)] duration-300  border-blue-800" />
-        <CarouselNext className="absolute top-[110%] right-[46%] p-5 shadow-xl border-2 active:shadow-none active:transform-[translateY(5px)] duration-300  border-blue-800" />
+        <CarouselPrevious className="absolute top-[110%] left-[45%] p-5 shadow-xl border-2 active:shadow-none active:transform-[translateY(5px)] duration-300  border-blue-800" />
+        <CarouselNext className="absolute top-[110%] right-[47%] p-5 shadow-xl border-2 active:shadow-none active:transform-[translateY(5px)] duration-300  border-blue-800" />
       </Carousel>
     </section>
   );
