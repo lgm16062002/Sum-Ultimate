@@ -1,6 +1,9 @@
 export default function Hero() {
   return (
-    <section className="relative w-full min-h-screen flex flex-col justify-end">
+    <section
+      className="relative w-full min-h-screen flex flex-col justify-end"
+      data-aos="fade-in"
+    >
       {/* Background Video */}
       <video
         autoPlay
@@ -14,7 +17,11 @@ export default function Hero() {
       </video>
 
       {/* Hero Form Wrapper with Gradient */}
-      <div className="relative z-10 w-full flex items-center justify-center gap-[10px] p-[65px] bg-gradient-to-t from-[rgba(50,50,180,0.888)] to-transparent max-md:flex-col max-md:p-8 max-md:items-center">
+      <div
+        className="relative z-10 w-full flex items-center justify-center gap-[10px] p-[65px] bg-gradient-to-t from-[rgba(50,50,180,0.888)] to-transparent max-md:flex-col max-md:p-8 max-md:items-center"
+        data-aos="fade-up"
+        data-aos-delay="150"
+      >
         <input
           type="text"
           placeholder="   "
@@ -29,7 +36,11 @@ export default function Hero() {
       </div>
 
       {/* Bouncing down arrow */}
-      <div className="absolute bottom-[-20px] left-1/2 -translate-x-1/2 z-20">
+      <div
+        className="absolute bottom-[-20px] left-1/2 -translate-x-1/2 z-20"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
         <a href="#car" className="inline-block">
           <div className="w-[40px] h-[40px] p-[10px] rounded-full bg-[rgba(50,50,180,0.888)] animate-bounce flex items-center justify-center text-white">
             {/* Using font awesome chevron as image fallback */}

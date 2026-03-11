@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import Header from './Components/Header.jsx'
 import Hero from './Components/hero.jsx'
 import PatientService from './Components/PatientService.jsx'
@@ -8,8 +9,19 @@ import Reward from './Components/Reward.jsx'
 import Leadership from './Components/leadership.jsx'
 import LatestBlog from './Components/LatestBlog.jsx'
 import Footer from './Components/Footer.jsx'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 100,
+      easing: 'ease-out-cubic',
+    })
+  }, [])
+
   return (
     <>
       <div className="w-full relative">

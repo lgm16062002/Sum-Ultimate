@@ -62,8 +62,16 @@ const patientService = [
 
 export default function PatientService() {
   return (
-    <section className="patientService py-14" id="services">
-      <div className="text-center mb-12 flex flex-col gap-3">
+    <section
+      className="patientService py-14"
+      id="services"
+      data-aos="fade-up"
+    >
+      <div
+        className="text-center mb-12 flex flex-col gap-3"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
         <h2 className="text-4xl md:text-[2.75rem] text-[#1c6e73] font-normal tracking-wide">
           Patient Services
         </h2>
@@ -82,7 +90,11 @@ export default function PatientService() {
         <CarouselContent className="">
           {patientService?.map((item, idx) => (
             <CarouselItem key={idx} className="basis-1/1 md:basis-1/2 lg:basis-1/4">
-              <div className="">
+              <div
+                className=""
+                data-aos="zoom-in"
+                data-aos-delay={150 + idx * 50}
+              >
                 <Card className="w-[290px] overflow-hidden rounded-3xl shadow-lg p-0">
                   <CardContent className="relative aspect-[3/4] p-0">
                     {/* Image */}

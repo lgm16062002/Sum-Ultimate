@@ -18,15 +18,27 @@ export default function LatestBlog() {
     ];
 
     return (
-        <section className="bg-white py-20 px-5 bg-[url('/blog-bg.png')] bg-cover bg-center">
+        <section
+            className="bg-white py-20 px-5 bg-[url('/blog-bg.png')] bg-cover bg-center"
+            data-aos="fade-up"
+        >
             <div className="max-w-[1200px] mx-auto">
-                <h2 className="text-center text-[28px] font-semibold tracking-[2px] text-[#163b5c] mb-[60px] uppercase">
+                <h2
+                    className="text-center text-[28px] font-semibold tracking-[2px] text-[#163b5c] mb-[60px] uppercase"
+                    data-aos="fade-up"
+                    data-aos-delay="50"
+                >
                     LATEST BLOG
                 </h2>
 
                 <div className="flex flex-wrap justify-center gap-10">
                     {blogs.map((blog, index) => (
-                        <div key={index} className="w-full sm:w-[350px] bg-white shadow-[0_8px_20px_rgba(0,0,0,0.12)] overflow-hidden transition-transform hover:-translate-y-2 duration-300">
+                        <div
+                            key={index}
+                            className="w-full sm:w-[350px] bg-white shadow-[0_8px_20px_rgba(0,0,0,0.12)] overflow-hidden transition-transform hover:-translate-y-2 duration-300"
+                            data-aos="fade-up"
+                            data-aos-delay={100 + index * 100}
+                        >
                             <img
                                 src={blog.image}
                                 alt={blog.title}

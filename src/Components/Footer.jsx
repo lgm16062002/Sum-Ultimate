@@ -1,6 +1,9 @@
 export default function Footer() {
     return (
-        <footer className="bg-gradient-to-r from-[#03309a] via-[#015166] to-[#015e4f] text-white py-20 px-5 lg:px-24 font-sans relative overflow-hidden">
+        <footer
+            className="bg-gradient-to-r from-[#03309a] via-[#015166] to-[#015e4f] text-white py-20 px-5 lg:px-24 font-sans relative overflow-hidden"
+            data-aos="fade-up"
+        >
             <div className="max-w-[1400px] mx-auto flex flex-col lg:flex-row gap-12">
 
                 {/* Left Section: Contact Info */}

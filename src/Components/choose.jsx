@@ -1,7 +1,10 @@
 
 export default function Choose() {
   return (
-    <section className="relative w-full overflow-hidden">
+    <section
+      className="relative w-full overflow-hidden"
+      data-aos="fade-up"
+    >
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
@@ -13,7 +16,11 @@ export default function Choose() {
 
       {/* Content Container */}
       <div className="relative z-10 w-[80%] mx-auto pb-46 pt-20">
-        <div className="max-w-xl text-white">
+        <div
+          className="max-w-xl text-white"
+          data-aos="fade-right"
+          data-aos-delay="100"
+        >
           <h2 className="text-4xl md:text-5xl font-medium tracking-wide mb-8">
             Why Choose SUM Ultimate
           </h2>

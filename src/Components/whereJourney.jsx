@@ -1,7 +1,10 @@
 
 export default function WhereJourney() {
   return (
-    <section className="relative w-full min-h-[500px] md:h-[600px] bg-[#eef6f6] flex items-center justify-center md:justify-end overflow-hidden py-[50px] md:py-0">
+    <section
+      className="relative w-full min-h-[500px] md:h-[600px] bg-[#eef6f6] flex items-center justify-center md:justify-end overflow-hidden py-[50px] md:py-0"
+      data-aos="fade-up"
+    >
 
       {/* Background Watermark */}
       <img
@@ -15,10 +18,16 @@ export default function WhereJourney() {
         src="/patient.png"
         alt="Compassionate Care"
         className="absolute left-0 bottom-0 h-auto w-[90%] md:w-[50%] lg:w-[45%] object-contain z-10 max-md:static max-md:mb-8 max-md:w-[80%]"
+        data-aos="fade-right"
+        data-aos-delay="100"
       />
 
       {/* Content wrapper taking up the right side */}
-      <div className="relative z-20 w-[90%] md:w-[60%] flex flex-col items-center md:items-start text-center md:text-left pl-0 md:pl-[5%] pr-0 md:pr-[5%]">
+      <div
+        className="relative z-20 w-[90%] md:w-[60%] flex flex-col items-center md:items-start text-center md:text-left pl-0 md:pl-[5%] pr-0 md:pr-[5%]"
+        data-aos="fade-left"
+        data-aos-delay="200"
+      >
         <h2 className="text-[#2b6b7a] text-[32px] md:text-[40px] lg:text-[45px] font-semibold tracking-wide leading-[1.2] mb-6 max-w-[600px]">
           Where Your Journey Meets<br />Compassionate Care
         </h2>

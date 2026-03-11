@@ -63,9 +63,18 @@ const pairs = chunkArray(centers, 2);
 
 export default function CenterOfExcellence() {
   return (
-    <section className="centerOfExcellence py-20 bg-[url('/section-pattern.png')] bg-cover bg-center bg-no-repeat" id="centers">
+    <section
+      className="centerOfExcellence py-20 bg-[url('/section-pattern.png')] bg-cover bg-center bg-no-repeat"
+      id="centers"
+      data-aos="fade-up"
+    >
       <div className="w-[90%] mx-auto relative">
-        <h2 className="text-4xl text-[#39ffbc] font-normal mb-16 px-4">Centers of Excellence</h2>
+        <h2
+          className="text-4xl text-[#39ffbc] font-normal mb-16 px-4"
+          data-aos="fade-right"
+        >
+          Centers of Excellence
+        </h2>
 
         <Carousel
           opts={{ align: "start", loop: true }}
@@ -82,7 +91,11 @@ export default function CenterOfExcellence() {
                 key={index}
                 className="pl-4 basis-1/2 md:basis-1/3 lg:basis-1/6"
               >
-                <div className="flex flex-col gap-12">
+                <div
+                  className="flex flex-col gap-12"
+                  data-aos="fade-up"
+                  data-aos-delay={100 + index * 80}
+                >
                   {pair.map((item, subIndex) => (
                     <div key={subIndex} className="flex flex-col items-center group cursor-pointer">
                       <div className="w-[155px] h-[145px] bg-[#EDEDED] rounded-[24px] flex items-center justify-center p-5 transition-all duration-300">
